@@ -1,13 +1,16 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from './home.module.scss';
+import Head from 'next/head';
+import React from 'react';
+import Header from '../components/Header';
 
 export default function Home() {
   return (
-    <div className={styles.contentContainer}>
+    <div>
       <Head>
         <title>BatForms</title>
-       </Head>
+      </Head>
+      <main>
+        <Header />
+      </main>
     </div>
-  )
-}
+  );
+};

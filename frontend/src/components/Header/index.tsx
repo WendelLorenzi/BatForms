@@ -1,18 +1,28 @@
-import styles from './styles.module.scss'
+import { Container, ContainerHeader, ContainerImage, ContainerButton } from './styles';
+import BruceHeader from '../../assets/bruceHeader.svg';
+import React from 'react';
+import { Button } from '@mui/material';
 
-export function Header() {
+const Header: React.FC = () => {
     return (
-        <header className={styles.headerContainer}>
-            <div className={styles.headerContent}>
-                <div className={styles.batIni}>
-                <p> .BatForms </p>
-                </div>
-                <nav>
-                   <a className={styles.active}>Home</a>
-                   <a>Produtos</a>
-                </nav>
-                {/* <SignInButton /> */}
-            </div>
-        </header>
+    <>
+        <Container>
+            <ContainerHeader>
+                <ContainerImage>
+                    {/* <BruceHeader /> */}
+                </ContainerImage>
+                <ContainerButton>
+                    <Button variant="outlined">
+                        Produtos Batcaverna
+                    </Button>
+                    <Button variant="outlined">
+                        Fazer Pedido
+                    </Button>
+                </ContainerButton>
+            </ContainerHeader>
+        </Container>
+    </>
     );
-}
+};
+
+export default Header;
