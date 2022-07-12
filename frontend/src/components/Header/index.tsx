@@ -9,14 +9,11 @@ const Header: React.FC = () => {
         <Container>
             <ContainerHeader>
                 <ContainerImage>
-                    {/* <BruceHeader /> */}
+                    <BruceHeader />
                 </ContainerImage>
                 <ContainerButton>
                     <Button variant="outlined">
                         Produtos Batcaverna
-                    </Button>
-                    <Button variant="outlined">
-                        Fazer Pedido
                     </Button>
                 </ContainerButton>
             </ContainerHeader>
